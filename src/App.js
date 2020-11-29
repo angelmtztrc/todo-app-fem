@@ -1,8 +1,10 @@
+// components
+import Header from './components/Header/Header';
+
 function App() {
   return (
-    <div>
-      <h1>Hello World!</h1>
-      <img src="./images/bg-desktop-dark.jpg" />
+    <div className="main light-scheme">
+      <Header />
     </div>
   );
 }

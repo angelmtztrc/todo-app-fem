@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url(../../images/bg-desktop-light.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  height: 300px;
+  width: 100%;
+}
+
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 600px;
+}
+
+.header__title {
+  color: var(--primary-background-color);
+  font-size: 5rem;
+  letter-spacing: 1.5rem;
+}
+
+.header__icon {
+  color: var(--primary-background-color);
+  height: 4rem;
+  width: 4rem;
+}

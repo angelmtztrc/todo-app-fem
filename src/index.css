@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+/* variables */
+:root {
+  --primary-color: hsl(220, 98%, 61%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.light-scheme {
+  --primary-background-color: hsl(0, 0%, 98%);
+  --secondary-background-color: hsl(236, 33%, 92%);
+  --primary-text-color: hsl(235, 19%, 35%);
+  --secondary-text-color: hsl(236, 9%, 61%);
+  --tertiary-text-color: hsl(233, 11%, 84%);
+}
+
+.dark-scheme {
+}
+
+/* globals */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* main */
+
+.main {
+  background: var(--secondary-background-color);
+  min-height: 100vh;
 }
