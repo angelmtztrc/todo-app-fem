@@ -1,0 +1,44 @@
+.form {
+  background: var(--primary-background-color);
+  border-radius: 1rem;
+  padding: 2rem 4rem;
+  width: 100%;
+}
+
+.form__container {
+  position: relative;
+}
+
+.form__checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+
+  border-radius: 100%;
+  border: 2px solid red;
+}
+
+.checkbox__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.form__input {
+  appearance: none;
+  border: 0;
+
+  display: block;
+  width: 100%;
+  padding-left: 5rem;
+
+  font-size: 1.8rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
+
+.form__input:focus {
+  outline: none;
+}
