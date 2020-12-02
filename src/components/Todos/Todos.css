@@ -1,0 +1,33 @@
+.todos__container {
+  background: var(--primary-background-color);
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.todos__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todos__footer p {
+  color: var(--secondary-text-color);
+  transition: all ease-in-out 0.3s;
+}
+
+.todos__footer > p:hover:not(:first-child),
+.todos__footer > div p:hover {
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+.todos__filter {
+  display: flex;
+  align-items: center;
+}
+
+.todos__filter p:not(:last-child) {
+  margin-right: 1rem;
+}
