@@ -1,12 +1,18 @@
 // styles
 import './Todos.css';
 
+// components
+import Todo from '../Todo/Todo';
+
 export interface TodosProps {}
 
 const Todos: React.SFC<TodosProps> = () => {
   return (
     <div className="todos__container">
-      <ul className="todos__list"></ul>
+      <ul className="todos__list">
+        <Todo />
+        <Todo />
+      </ul>
       <footer className="todos__footer">
         <p>5 items left</p>
         <div className="todos__filter">

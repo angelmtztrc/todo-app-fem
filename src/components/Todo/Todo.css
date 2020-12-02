@@ -1,0 +1,39 @@
+.todo {
+  padding: 2rem 3rem;
+  border-bottom: 1px solid var(--tertiary-text-color);
+  color: var(--primary-text-color);
+}
+
+.todo__container {
+  display: flex;
+  align-items: center;
+}
+
+.todo__checkbox {
+  align-items: center;
+  border: 0.1rem solid var(--secondary-text-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 2rem;
+}
+
+.checkbox__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.todo__remove {
+  appearance: none;
+  border: none;
+  background: transparent;
+  margin-left: auto;
+}
+
+.remove__icon {
+  color: var(--secondary-text-color);
+  height: 2.5rem;
+  width: 2.5rem;
+}

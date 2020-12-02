@@ -9,7 +9,7 @@
   position: relative;
 }
 
-.form__checkbox {
+.form__circle {
   position: absolute;
   top: 0;
   left: 0;
@@ -23,11 +23,6 @@
 
   border: 0.1rem solid var(--secondary-text-color);
   border-radius: 100%;
-}
-
-.checkbox__icon {
-  width: 1.5rem;
-  height: 1.5rem;
 }
 
 .form__input {
