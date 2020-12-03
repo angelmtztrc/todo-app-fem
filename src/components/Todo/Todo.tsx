@@ -1,14 +1,19 @@
 // styles
 import './Todo.css';
 
-export interface TodoProps {}
+// type
+import { TodoType } from '../../App';
 
-const Todo: React.SFC<TodoProps> = () => {
+type TodoProps = {
+  todo: TodoType;
+};
+
+const Todo = ({ todo }: TodoProps) => {
   return (
     <li className="todo">
       <div className="todo__container">
         <span className="todo__checkbox"></span>
-        <p className="todo__text">Create a React App with Tailwind CSS</p>
+        <p className="todo__text">{todo.description}</p>
         <button className="todo__remove">
           <svg
             className="remove__icon"

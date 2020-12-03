@@ -34,6 +34,11 @@
   align-items: center;
 }
 
+.todos__filter > .active {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
 .todos__filter p:not(:last-child) {
   margin-right: 1rem;
 }
