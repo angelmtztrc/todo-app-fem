@@ -3,6 +3,7 @@
 /* variables */
 :root {
   --primary-color: hsl(220, 98%, 61%);
+  --heading-color: hsl(0, 0%, 98%);
 }
 
 .light-scheme {
@@ -14,6 +15,11 @@
 }
 
 .dark-scheme {
+  --primary-background-color: hsl(235, 24%, 19%);
+  --secondary-background-color: hsl(235, 21%, 11%);
+  --primary-text-color: hsl(236, 33%, 92%);
+  --secondary-text-color: hsl(234, 11%, 52%);
+  --tertiary-text-color: hsl(233, 14%, 35%);
 }
 
 /* globals */
