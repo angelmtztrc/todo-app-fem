@@ -7,6 +7,7 @@
 }
 
 .light-scheme {
+  --background-imagen-desktop: url('./images/bg-desktop-light.jpg');
   --primary-background-color: hsl(0, 0%, 98%);
   --secondary-background-color: hsl(236, 33%, 92%);
   --primary-text-color: hsl(235, 19%, 35%);
@@ -15,6 +16,7 @@
 }
 
 .dark-scheme {
+  --background-imagen-desktop: url('./images/bg-desktop-dark.jpg');
   --primary-background-color: hsl(235, 24%, 19%);
   --secondary-background-color: hsl(235, 21%, 11%);
   --primary-text-color: hsl(236, 33%, 92%);
