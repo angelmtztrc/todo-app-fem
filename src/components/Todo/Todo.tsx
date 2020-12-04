@@ -34,7 +34,7 @@ const Todo = ({ todo, todos, setTodos }: TodoProps) => {
       <div className="todo__container">
         <button
           onClick={handleStatus}
-          className={`todo__checkbox ${todo.completed ? 'completed' : ''}`}
+          className={`todo__checkbox ${todo.completed ? 'todo__checkbox--completed' : ''}`}
         >
           <svg
             className="checkbox__icon"
@@ -49,7 +49,9 @@ const Todo = ({ todo, todos, setTodos }: TodoProps) => {
             />
           </svg>
         </button>
-        <p className="todo__text">{todo.description}</p>
+        <p className={`todo__text ${todo.completed ? 'todo__text--completed' : ''}`}>
+          {todo.description}
+        </p>
         <button onClick={handleRemove} className="todo__remove">
           <svg
             className="remove__icon"

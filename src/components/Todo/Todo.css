@@ -30,11 +30,11 @@
   display: none;
 }
 
-.todo__checkbox.completed {
+.todo__checkbox.todo__checkbox--completed {
   background: linear-gradient(to bottom, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 }
 
-.todo__checkbox.completed > .checkbox__icon {
+.todo__checkbox.todo__checkbox--completed > .checkbox__icon {
   display: block;
 }
 
@@ -42,6 +42,11 @@
   color: var(--primary-text-color);
   width: 2rem;
   height: 2rem;
+}
+
+.todo__text.todo__text--completed {
+  text-decoration: line-through;
+  color: var(--secondary-text-color);
 }
 
 .todo__remove {
