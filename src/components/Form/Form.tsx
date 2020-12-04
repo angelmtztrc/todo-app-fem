@@ -28,7 +28,7 @@ const Form = ({ todos, setTodos }: FormProps) => {
     e.preventDefault();
 
     // validation
-    if (todo.completed === undefined) {
+    if (todo.description === undefined || todo.description === '') {
       return;
     }
 
