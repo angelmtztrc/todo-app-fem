@@ -24,6 +24,11 @@ const Todo = ({ todo, todos, setTodos }: TodoProps) => {
       })
     ]);
   };
+
+  const handleRemove = () => {
+    setTodos([...todos.filter(item => item.id !== todo.id)]);
+  };
+
   return (
     <li className="todo">
       <div className="todo__container">
@@ -45,7 +50,7 @@ const Todo = ({ todo, todos, setTodos }: TodoProps) => {
           </svg>
         </button>
         <p className="todo__text">{todo.description}</p>
-        <button className="todo__remove">
+        <button onClick={handleRemove} className="todo__remove">
           <svg
             className="remove__icon"
             fill="currentColor"
