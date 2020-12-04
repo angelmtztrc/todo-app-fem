@@ -9,9 +9,10 @@ import { TodoType } from '../../App';
 
 type TodosProps = {
   todos: Array<TodoType>;
+  setTodos: Function;
 };
 
-const Todos = ({ todos }: TodosProps) => {
+const Todos = ({ todos, setTodos }: TodosProps) => {
   const [filter, setFilter] = useState<'all' | 'active' | 'completed'>('all');
   return (
     <div className="todos__container">
@@ -19,12 +20,12 @@ const Todos = ({ todos }: TodosProps) => {
         {filter === 'completed'
           ? todos
               .filter(todo => todo.completed)
-              .map(todo => <Todo key={todo.description} todo={todo} />)
+              .map(todo => <Todo key={todo.id} todo={todo} todos={todos} setTodos={setTodos} />)
           : filter === 'active'
           ? todos
               .filter(todo => !todo.completed)
-              .map(todo => <Todo key={todo.description} todo={todo} />)
-          : todos.map(todo => <Todo key={todo.description} todo={todo} />)}
+              .map(todo => <Todo key={todo.id} todo={todo} todos={todos} setTodos={setTodos} />)
+          : todos.map(todo => <Todo key={todo.id} todo={todo} todos={todos} setTodos={setTodos} />)}
       </ul>
       <footer className="todos__footer">
         <p>{todos.filter(todo => !todo.completed).length} items left</p>

@@ -10,6 +10,8 @@
 }
 
 .todo__checkbox {
+  background: transparent;
+
   align-items: center;
   border: 0.1rem solid var(--secondary-text-color);
   border-radius: 100%;
@@ -20,9 +22,26 @@
   margin-right: 2rem;
 }
 
+.todo__checkbox:focus {
+  outline: none;
+}
+
+.todo__checkbox > .checkbox__icon {
+  display: none;
+}
+
+.todo__checkbox.completed {
+  background: linear-gradient(to bottom, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.todo__checkbox.completed > .checkbox__icon {
+  display: block;
+}
+
 .checkbox__icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  color: var(--primary-text-color);
+  width: 2rem;
+  height: 2rem;
 }
 
 .todo__remove {

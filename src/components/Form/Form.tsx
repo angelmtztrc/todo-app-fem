@@ -1,4 +1,4 @@
-// styles
+import { nanoid } from 'nanoid';
 import { useState } from 'react';
 
 // styles
@@ -30,8 +30,7 @@ const Form = ({ todos, setTodos }: FormProps) => {
       return;
     }
 
-    setTodos([todo, ...todos]);
-    console.log(todo);
+    setTodos([{ id: nanoid(10), ...todo }, ...todos]);
   };
 
   return (
