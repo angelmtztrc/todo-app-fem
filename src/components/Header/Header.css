@@ -32,3 +32,23 @@
   height: 4rem;
   width: 4rem;
 }
+
+@media (max-width: 375px) {
+  .header {
+    background: var(--background-imagen-mobile);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 25rem;
+  }
+  .header__box {
+    width: 32rem;
+  }
+  .header__title {
+    font-size: calc(5rem * 0.65);
+  }
+  .header__icon {
+    height: calc(4rem * 0.65);
+    width: calc(4rem * 0.65);
+  }
+}

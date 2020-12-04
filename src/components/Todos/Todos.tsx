@@ -54,6 +54,20 @@ const Todos = ({ todos, setTodos }: TodosProps) => {
           <p onClick={handleClear}>Clear Completed</p>
         </footer>
       </div>
+      <div className="todos__filter todos__filter--sm">
+        <p className={filter === 'all' ? 'active' : ''} onClick={() => setFilter('all')}>
+          All
+        </p>
+        <p className={filter === 'active' ? 'active' : ''} onClick={() => setFilter('active')}>
+          Active
+        </p>
+        <p
+          className={filter === 'completed' ? 'active' : ''}
+          onClick={() => setFilter('completed')}
+        >
+          Completed
+        </p>
+      </div>
       <p className="todos__dialog">Drag and drop to reorder list</p>
     </div>
   );

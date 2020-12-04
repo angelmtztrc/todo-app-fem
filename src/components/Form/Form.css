@@ -44,3 +44,18 @@
 .form__input:focus {
   outline: none;
 }
+
+@media (max-width: 375px) {
+  .form {
+    padding: calc(2rem * 0.65) calc(3rem * 0.65);
+  }
+  .form__circle {
+    width: calc(3rem * 0.65);
+    height: calc(3rem * 0.65);
+    margin-top: -0.15rem;
+  }
+  .form__input {
+    padding-left: calc(5rem * 0.65);
+    font-size: 1.5rem;
+  }
+}

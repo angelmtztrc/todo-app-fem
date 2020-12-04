@@ -28,6 +28,11 @@ function App() {
         <Form todos={todos} setTodos={setTodos} />
         <Todos todos={todos} setTodos={setTodos} />
       </div>
+      <div className="attribution">
+        <p>
+          Challenge by <span>Frontend Mentor</span>. Coded by <span>Angel Martinez</span>.
+        </p>
+      </div>
     </div>
   );
 }
