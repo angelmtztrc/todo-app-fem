@@ -26,11 +26,20 @@ const Form = ({ todos, setTodos }: FormProps) => {
   // submit the form
   const handleSubmit = (e: React.SyntheticEvent): void => {
     e.preventDefault();
+
+    // validation
     if (todo.completed === undefined) {
       return;
     }
 
+    // save the todo
     setTodos([{ id: nanoid(10), ...todo }, ...todos]);
+
+    // reset form
+    setTodo({
+      description: '',
+      completed: false
+    });
   };
 
   return (
