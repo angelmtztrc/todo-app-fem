@@ -14,6 +14,11 @@ type TodosProps = {
 
 const Todos = ({ todos, setTodos }: TodosProps) => {
   const [filter, setFilter] = useState<'all' | 'active' | 'completed'>('all');
+
+  const handleClear = () => {
+    setTodos([...todos.filter(todo => !todo.completed)]);
+  };
+
   return (
     <div className="todos__container">
       <ul className="todos__list">
@@ -43,7 +48,7 @@ const Todos = ({ todos, setTodos }: TodosProps) => {
             Completed
           </p>
         </div>
-        <p>Clear Completed</p>
+        <p onClick={handleClear}>Clear Completed</p>
       </footer>
     </div>
   );
